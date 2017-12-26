@@ -1,11 +1,11 @@
-pomelo-logger
+meerkat-logger
 ========
-
-pomelo-logger is a [log4js](https://github.com/nomiddlename/log4js-node) wrapper for [pomelo](https://github.com/NetEase/pomelo) which provides some useful features.  
+meerkat-logger is based on pomelo-logger.  
+meerkat-logger is a [log4js](https://github.com/nomiddlename/log4js-node) wrapper for [pomelo](https://github.com/NetEase/pomelo) which provides some useful features.  
 
 ## Installation
 ```
-npm install pomelo-logger
+npm install meerkat-logger
 ```
 
 ## Features
@@ -14,7 +14,7 @@ besides category, you can output prefix as you like in your log
 prefix can be filename, serverId, serverType, host etc  
 to use this feature, you just pass prefix params to getLogger function  
 ```
-var logger = require('pomelo-logger').getLogger(category, prefix1, prefix2, ...);
+var logger = require('meerkat-logger').getLogger(category, prefix1, prefix2, ...);
 ```
  log output msg will output with prefix ahead   
 
@@ -74,7 +74,7 @@ the above configuration means reload the configuration file every 30 seconds. Yo
 ## Example
 log.js
 ```
-var logger = require('pomelo-logger').getLogger('log', __filename, process.pid);
+var logger = require('meerkat-logger').getLogger('log', __filename, process.pid);
 
 process.env.LOGGER_LINE = true;
 logger.info('test1');
