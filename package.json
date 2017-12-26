@@ -1,12 +1,12 @@
 {
-    "name": "pomelo-logger",
-    "version": "0.1.7",
-    "private": false,
-    "dependencies": {
-        "log4js": "0.6.21"
-    },
-    "devDependencies": {
-        "should": ">=0.0.1",
-        "mocha": ">=0.0.1"
-    }
+  "name": "meerkat-logger",
+  "version": "1.0.0",
+  "private": false,
+  "dependencies": {
+    "log4js": "^2.4.1"
+  },
+  "devDependencies": {
+    "should": ">=0.0.1",
+    "mocha": ">=0.0.1"
+  }
 }
